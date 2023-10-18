@@ -1,5 +1,5 @@
 <?php
-    require_once "controllers/landing.php";
-    $controller= new Landing;
-    $controller->main();
+    require_once "controllers/Roles.php";
+    $controller = new Roles;
+    $controller->createRol();
 ?>
