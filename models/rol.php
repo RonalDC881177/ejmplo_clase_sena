@@ -7,7 +7,8 @@
         // Métodos
         # Sobrecarga de Constructores
         public function __construct(){}
-        // Métodos set() y get()        
+        // Métodos set() y get() 
+
         # rolCode: set()
         public function setRolCode($rolCode){
             $this->rolCode = $rolCode;
@@ -18,6 +19,19 @@
         }        
         // ****** 2da Parte: Persistencia DB (CRUD) ****** //
         public function rolCreate(){
+            echo "Función para crear Rol";
+        }
+
+        # rolCode: set()
+        public function setRolName($rolName){
+            $this->rolName = $rolName;
+        }
+        # rolName$rolName: get()
+        public function getRolName(){
+            return $this->rolName;
+        }        
+        // ****** 2da Parte: Persistencia DB (CRUD) ****** //
+        public function NameCreate(){
             echo "Función para crear Rol";
         }
     }    

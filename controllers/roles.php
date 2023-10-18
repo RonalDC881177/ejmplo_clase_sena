@@ -11,5 +11,13 @@
             $rol->setRolCode("1");            
             echo "<br>Código Rol: " . $rol->getRolCode();            
         }
+
+
+        // Registrar nombre
+        public function createName(){
+            $rol = new Rol;
+            $rol->setRolCode("1");            
+            echo "<br>Código Rol: " . $rol->getRolName();            
+        }
     }
 ?>
