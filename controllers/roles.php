@@ -16,8 +16,8 @@
         // Registrar nombre
         public function createName(){
             $rol = new Rol;
-            $rol->setRolCode("1");            
-            echo "<br>Código Rol: " . $rol->getRolName();            
+            $rol->setRolName("abc");            
+            echo "<br>Nombre Rol: " . $rol->getRolName();            
         }
     }
 ?>
