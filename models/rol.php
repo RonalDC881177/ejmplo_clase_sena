@@ -4,9 +4,24 @@
         // Atributos
         private $rolCode;
         private $rolName;
+        //porcada metodo privadeo se debe crear un set y un get
+
+        
         // Métodos
         # Sobrecarga de Constructores
-        public function __construct(){}
+        public function __construct(){
+            $a = func_get_args();
+            $i = func_num_args();
+            if (method_exists($this, $f ='__construct' . $i)){
+                call_user_func_array(array($this, $f), $a);
+            }
+        }
+
+        public function __construct2($rolCode, $rolName){
+            $this->rolCode = $rolCode;
+            $this->rolName = $rolName;
+            
+        }
         // Métodos set() y get() 
 
         # rolCode: set()
@@ -31,7 +46,7 @@
             return $this->rolName;
         }        
         // ****** 2da Parte: Persistencia DB (CRUD) ****** //
-        public function NameCreate(){
+        public function rolCreateCreate(){
             echo "Función para crear Rol";
         }
     }    
