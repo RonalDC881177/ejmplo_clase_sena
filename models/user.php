@@ -21,9 +21,8 @@
         }
 
         //carga de contructores
-        public function __construct8($rolCode, $rolName, $userCode, $userName, $userLastName, $userEmail, $userPass, $userStatus){
+        public function __construct8($rolCode, $userCode, $userName, $userLastName, $userEmail, $userPass, $userStatus){
             $this->rolCode = $rolCode;
-            $this->rolName = $rolName;
             $this->userCode = $userCode;
             $this->userName = $userName;
             $this->userLastName = $userLastName;
@@ -49,13 +48,6 @@
         }
         public function getRolCode(){
             return $this->rolCode;
-        }
-
-        public function setRolName($rolName){
-            $this->rolName = $rolName;
-        }
-        public function getRolName(){
-            return $this->rolName;
         }
 
         public function setUserCode($userCode){
