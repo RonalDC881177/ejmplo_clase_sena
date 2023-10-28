@@ -32,22 +32,23 @@
         public function getRolCode(){
             return $this->rolCode;
         }        
-        // ****** 2da Parte: Persistencia DB (CRUD) ****** //
-        public function rolCreate(){
-            echo "Función para crear Rol";
-        }
+        // Persistencia DB (CRUD) ****** //
 
-        # rolCode: set()
+        # rolName: set()
         public function setRolName($rolName){
             $this->rolName = $rolName;
         }
         # rolName$rolName: get()
         public function getRolName(){
             return $this->rolName;
-        }        
-        // ****** 2da Parte: Persistencia DB (CRUD) ****** //
-        public function rolCreateCreate(){
-            echo "Función para crear Rol";
         }
-    }    
+        
+        public function rollCreate(){
+            try{
+                $sql = 'INSERT INTO ROLES VALUES(:rolCode, :rolName)';
+                his->dbh->prepare($sql);
+            }
+        }
+    }
+       
 ?>
